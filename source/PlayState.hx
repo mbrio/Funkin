@@ -204,6 +204,8 @@ class PlayState extends MusicBeatState
 		{
 			case 'senpai-angry':
 				iconRPC = 'senpai';
+			case 'pink-sloth':
+				iconRPC = 'monster';
 			case 'monster-christmas':
 				iconRPC = 'monster';
 			case 'mom-car':
@@ -229,7 +231,7 @@ class PlayState extends MusicBeatState
 
 		switch (SONG.song.toLowerCase())
 		{
-                        case 'spookeez' | 'monster' | 'south': 
+                        case 'spookeez' | 'monster' | 'south' | 'sloth': 
                         {
                                 curStage = 'spooky';
 	                          halloweenLevel = true;
@@ -607,6 +609,8 @@ class PlayState extends MusicBeatState
 			case "spooky":
 				dad.y += 200;
 			case "monster":
+				dad.y += 100;
+			case "pink-sloth":
 				dad.y += 100;
 			case 'monster-christmas':
 				dad.y += 130;
